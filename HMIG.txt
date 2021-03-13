@@ -1,0 +1,18 @@
+
+//***-------------------------------------------------------------
+//*--         MIGRATE THE FILE
+//***-------------------------------------------------------------
+//HMIGRAT1     EXEC PGM=IKJEFT01
+//SYSPRINT     DD  SYSOUT=*
+//SYSTSPRT     DD  SYSOUT=*
+//SYSTSIN      DD  *
+  HMIG 'USER.JESJCL.D12011'
+//***-------------------------------------------------------------
+//*--         RECALL THE FILE
+//***-------------------------------------------------------------
+//HRECALL1     EXEC PGM=IKJEFT01
+//SYSPRINT     DD  SYSOUT=*
+//SYSTSPRT     DD  SYSOUT=*
+//SYSTSIN      DD  *
+  HRECALL 'USER.JESJCL.D12011'
+
